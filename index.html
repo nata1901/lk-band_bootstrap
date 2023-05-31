@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        .col {
+            border: 1px solid;
+            min-height: 100px;
+        }
+        .wrapper {
+            background-color: lightsteelblue;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- 
+        Цвета:
+            primary - синий
+            secondary - серый
+            danger - red
+            warning - orange/yellow
+            success - green
+            light - светло-серый
+            dark - темно-серый
+            info - голубой
+            black
+            white
+
+            border-primary
+            btn-primary
+            btn-outline-primary
+            text-primary
+            bg-primary
+            table-dark
+            table-row-primary
+
+        размеры (m, p, g)
+            0 - =)
+            1 - .25rem
+            2 - .5rem
+            3 - 1rem
+            4 - 1.5rem
+            5 - 3rem
+     -->
+    <!-- .wrapper>div>.col*20 -->
+    <div class="wrapper container-fluid">
+        <div class="container bg-light text-dark px-5 py-3">
+            <div class="row g-2">
+                <div class="col-12">
+                    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                        <div class="container-fluid">
+                          <a class="navbar-brand" href="#">Navbar</a>
+                          <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                          </form>
+                          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#abc" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                          </button>
+                          <div class="collapse navbar-collapse" id="abc">
+                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                              </li>
+                              <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Action</a></li>
+                                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                                  <li><hr class="dropdown-divider"></li>
+                                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                              </li>
+                              <li class="nav-item">
+                                <a class="nav-link disabled">Disabled</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </nav>
+                </div>
+                <div class="col-12 text-info py-5">
+                    <h1>Привет Bootstrap!</h1>
+                </div>
+                <!-- .col-12>table.table>(thead>tr>th*3{caption$})+tbody>tr*5>td*3>lorem10 -->
+                <div class="col-12">
+                    <table class="table table-bordered table-hover">
+                        <thead>
+                            <tr>
+                                <th>caption1</th>
+                                <th>caption2</th>
+                                <th>caption3</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, autem?</td>
+                                <td>Fugiat, quibusdam enim! Laudantium amet in magni hic facere architecto!</td>
+                                <td>Voluptatum obcaecati exercitationem maxime quas ea architecto voluptate rerum delectus!</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, amet.</td>
+                                <td>Unde corporis, quaerat rerum molestias impedit consequatur aperiam repudiandae quos?</td>
+                                <td>Et molestias accusamus voluptatem vero aspernatur a quam error quo?</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae, consequatur.</td>
+                                <td>Natus molestiae aspernatur iste beatae nobis rerum, placeat vel eum!</td>
+                                <td>Velit facere modi magnam soluta non quia qui quaerat officia?</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad, aliquid.</td>
+                                <td>Iure eligendi voluptatibus vitae tempora iusto quo amet id neque!</td>
+                                <td>Iure nam qui nesciunt placeat fugiat quo, similique eligendi fugit!</td>
+                            </tr>
+                            <tr>
+                                <td>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, minus.</td>
+                                <td>Quibusdam consequatur illo illum hic autem repudiandae mollitia non beatae.</td>
+                                <td>Dolores earum excepturi fugiat laboriosam quod velit enim eveniet totam?</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="col-12 col-md-6">
+                    <!-- div.h1{Привет Leksa} -->
+                    <div class="display-4">Привет Leksa</div>
+                </div>
+                <div class="col-6 col-md-3 justify-content-center d-flex align-items-center bg-success rounded text-light">1/4</div>
+                <div class="col-6 col-md-3 justify-content-center d-flex align-items-center bg-dark rounded text-light">1/4</div>
+                <!-- start Карточки на сайте -->
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <!-- end Карточки на сайте -->
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-4">
+                    <div class="card">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
+                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                          <a href="#" class="card-link">Card link</a>
+                          <a href="#" class="card-link">Another link</a>
+                        </div>
+                      </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="row g-2">
+                        <div class="col-12 col-md-6">
+                            <p class="bg-secondary p-3 rounded">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate cumque quo officia. Odit laudantium harum expedita dolore rerum velit error vitae vel, id tempora, exercitationem beatae voluptas, animi nobis nisi.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <p class="bg-secondary p-3 rounded">
+                            Aliquid, accusantium earum corporis officiis commodi provident illum vel nemo nam iusto doloribus dolores eligendi obcaecati incidunt repellendus quod esse nulla, quis deserunt libero sunt! Doloribus dolore error molestiae sed.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <iframe height="300px" width="100%" src="https://www.youtube.com/embed/uZ7mNJlLy6w"></iframe>
+                </div>
+                <div class="col-12">
+                    Happy End
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
